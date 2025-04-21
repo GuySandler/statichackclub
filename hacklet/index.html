@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Guy's YSWY hub</title>
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body><center>
+		<script src="../main.js"></script>
+		<div id="header">
+			<h1>Guy's Link Hub for Hack Club YSWS</h1>
+		</div>
+		<div id="content">
+			<div class="card" style="background-color: #8d8fff;">
+				<div>
+					<h2 class="text">CSS Destroyer</h2>
+					<p class="text">Made for Hacklet</p>
+					<p class="text">Bookmarklet to ruin a site's css by a bit</p>
+				</div>
+			</div>
+			<div class="card" style="background-color: #4fd758;height: auto;">
+				<div>
+					<h2 class="text">Project</h2>
+					<div id="grid">
+						<a href="javascript: (() => {
+	const elements = document.body.getElementsByTagName('*');
+	function randint(min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+	for (const element of elements) {
+		switch (randint(0, 8)) {
+			case 0:
+				element.style.position = 'relative';
+				element.style.top = `${randint(-25, 25)}px`;
+				break;
+			case 1:
+				element.style.position = 'relative';
+				element.style.right = `${randint(-25, 25)}px`;
+				break;
+			case 2:
+				element.style.position = 'relative';
+				element.style.left = `${randint(-25, 25)}px`;
+				break;
+			case 3:
+				element.style.position = 'relative';
+				element.style.bottom = `${randint(-25, 25)}px`;
+				break;
+			case 4:
+				element.style.transform = `rotate(${randint(-25, 25)}deg)`;
+				break;
+			case 5:
+				element.style.transform = `scale(${randint(50, 150) / 100})`;
+				break;
+			case 6:
+				element.style.width = `${randint(1, 125)}%`;
+				break;
+			case 7:
+				element.style.height = `${randint(1, 125)}%`;
+				break;
+			case 8:
+				const fonts = [
+					'Arial',
+					'Courier New',
+					'Georgia',
+					'Times New Roman',
+					'Verdana',
+				];
+				const font = fonts[randint(0, fonts.length - 1)];
+				element.style.fontFamily = font;
+				break;
+			default:
+				break;
+		}
+	}
+})();
+" class="grid-item" id="hacklet">
+							<div style="padding:10px;">
+								<h3 class="text">Hacklet</h3>
+								<p class="text">CSS Destroyer</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</center></body>
+</html>
