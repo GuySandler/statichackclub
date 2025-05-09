@@ -51,7 +51,8 @@ body {
 .text {
 	margin: 0;
 	padding: 0;
-	font-size: 20px;
+	/* font-size: 20px; */
+	font-size: large;
 	color: #fff;
 	display: block;
 	flex: 1 1 0px;
@@ -60,6 +61,8 @@ body {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 	grid-gap: 10px;
+	width: 80%;
+	height: 80%;
 }
 .grid-item {
 	background-color: #ec3750;
@@ -68,4 +71,17 @@ body {
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
+}
+a {
+	text-decoration: none;
+}
+button {
+	background-color: #ec3750;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: large;
+	padding: 5px;
 }
